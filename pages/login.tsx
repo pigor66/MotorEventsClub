@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Alert, Button, Card, Col, Container, Form, InputGroup, Row } from 'react-bootstrap';
 import { useRouter } from 'next/router';
-import GoogleLoginButton from '@/components/btnLoginGoogle/btnLoginGoogle';
 import ProgressBarComponent from '@/components/progressbar/progressbar';
 import Head from 'next/head'
 
@@ -97,7 +96,6 @@ export default function Login() {
 
               </Card.Footer>
             </Card>
-            <GoogleLoginButton />
           </Container>
         </>
       )
