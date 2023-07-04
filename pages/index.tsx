@@ -199,7 +199,7 @@ export default function Home() {
                   <Card.Title>Card Title</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    bulk of the cards content.
                   </Card.Text>
                   <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
@@ -224,7 +224,6 @@ export default function Home() {
               defaultActiveKey="profile"
               id="justify-tab-example"
               justify
-              clas
             >
               <Tab eventKey="home" title="Home">
                 Tab content for Home
