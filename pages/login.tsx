@@ -29,7 +29,7 @@ export default function Login() {
   return (
     <div className='dark vh-100'>
 
-      <Toast bg='danger' onClose={() => setShow(false)} show={show} delay={3000} autohide style={{ position: 'absolute', top: '2rem', right: '5rem' }}>
+      <Toast bg='danger' onClose={() => setShow(false)} show={show} delay={3000} autohide style={{ position: 'absolute', top: '2rem' }}>
         <Toast.Header className='bg-danger text-light'>
 
           <strong className="me-auto">Erro</strong>
