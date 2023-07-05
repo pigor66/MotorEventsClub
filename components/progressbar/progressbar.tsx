@@ -31,7 +31,7 @@ export default function ProgressBarComponent(props: any) {
 
   return (
 
-    <Container className="d-flex align-items-center justify-content-center vh-100">
+    <Container className="d-flex align-items-center justify-content-center">
       <ProgressBar animated now={progress} variant='danger' className="w-50" label={`${progress}%`} />
     </Container>
 
