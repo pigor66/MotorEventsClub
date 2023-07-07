@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import ToastComponent from '@/components/toast/toast';
+import ToastComponent from './components/toast/toast';
 import Head from 'next/head';
 
 

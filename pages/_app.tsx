@@ -1,7 +1,16 @@
-import '@/styles/globals.css'
+import '@/styles/globals.css';
+import '@/styles/card.css';
+import '@/styles/nav.css';
+import '@/styles/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app';
+import { SessionProvider } from 'next-auth/react';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+export default function App({ Component, pageProps, session }: AppProps) {
+  return (
+    <SessionProvider session={session} refetchInterval={5 * 60}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  );
+};
+

@@ -1,0 +1,18 @@
+.cardHover {
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.cardHover:hover {
+    box-shadow: 0px 0px 15px 1px #cc0000;
+    transform: translate(-5px, -5px);
+}
+
+.moreInfo {
+    opacity: 0.7;
+    color: #cc0000;
+    transition: opacity 0.25s;
+}
+
+.moreInfo:hover {
+    opacity: 1;
+}

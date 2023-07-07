@@ -25,14 +25,13 @@ a {
   text-decoration: none;
 }
 
-/* Remover estilo de foco padrão */
 a:focus, button:focus {
   outline: none;
 }
-
 
 .dark {
   background-color: #000000f1;
   color: #fff;
 }
+
 
