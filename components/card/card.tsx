@@ -1,7 +1,7 @@
 import { Button, Card, PageItem } from "react-bootstrap";
 import Image from 'react-bootstrap/Image';
 
-export function CardComponent(props: any) {
+export default function CardComponent(props: any) {
     const MAX_CARACTERES = 100;
 
     const limitedCardBody = props.cardBody.length > MAX_CARACTERES

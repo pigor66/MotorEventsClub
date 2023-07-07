@@ -1,10 +1,10 @@
-import Menu from './components/navbar/navbar';
-import ProgressBarComponent from './components/progressbar/progressbar';
+import CardComponent from '@/components/card/card';
+import Menu from '@/components/navbar/navbar';
+import ProgressBarComponent from '@/components/progressbar/progressbar';
 import Head from 'next/head'
 
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { CardComponent } from './components/card/card';
 
 
 export default function Home() {

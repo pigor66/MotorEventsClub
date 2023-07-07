@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container } from 'react-bootstrap';
-import ProgressBarComponent from './components/progressbar/progressbar';
 import Head from 'next/head'
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from 'react-bootstrap/Image';
 import { useRouter } from 'next/router';
+import ProgressBarComponent from '@/components/progressbar/progressbar';
 
 
 
