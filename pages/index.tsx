@@ -1,13 +1,10 @@
 import Menu from './components/navbar/navbar';
 import ProgressBarComponent from './components/progressbar/progressbar';
 import Head from 'next/head'
-import teste from 'public/images/8.jpg';
 
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { CardComponent } from './components/card/card';
-import Image from 'next/image';
-import { useSession } from 'next-auth/react';
 
 
 
@@ -39,35 +36,35 @@ export default function Home() {
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='lorem asudashi audhauishd ausdhiasuhda ausdhiauhda ausdhaishdasjdas dasd sa da d a sd asd  qw eq e q wsd as df as f asd  sdf as fas da sd as d asd as  da sd as d asd as df dg sfd  qw e wq da sd a  sd as f sa ad f a   dasdasd asd asdasdasd asdasdasd asdas dasdasdas dasdasdasrdqw d as d asd a s'
-                  image={teste}
+                  image='/images/8.jpg'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image={teste}
+                  image='/images/8.jpg'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image={teste}
+                  image='/images/8.jpg'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image={teste}
+                  image='/images/8.jpg'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image={teste}
+                  image='/images/8.jpg'
                 />
               </Col>
 

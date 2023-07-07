@@ -16,18 +16,14 @@ export default function ProgressBarComponent(props: any) {
         if (prevProgress === 95) {
           clearInterval(progressInterval);
         }
-
-
         return prevProgress + 5;
-
       });
     }, 25);
-
     return () => {
       clearTimeout(timer);
       clearInterval(progressInterval);
     };
-  }, []);
+  }, [props]);
 
   return (
 

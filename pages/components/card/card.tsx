@@ -1,5 +1,5 @@
 import { Button, Card, PageItem } from "react-bootstrap";
-import Image from 'next/image';
+import Image from 'react-bootstrap/Image';
 
 export function CardComponent(props: any) {
     const MAX_CARACTERES = 100;
