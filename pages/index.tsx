@@ -31,35 +31,35 @@ export default function Home() {
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='lorem asudashi audhauishd ausdhiasuhda ausdhiauhda ausdhaishdasjdas dasd sa da d a sd asd  qw eq e q wsd as df as f asd  sdf as fas da sd as d asd as  da sd as d asd as df dg sfd  qw e wq da sd a  sd as f sa ad f a   dasdasd asd asdasdasd asdasdasd asdas dasdasdas dasdasdasrdqw d as d asd a s'
-                  image='/images/8.jpg'
+                  image='https://lh3.google.com/u/0/d/1WbVXrGwe3QcFO0da2BPNCaEWILxWtXaF=w2000-h1576-iv1'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image='/images/8.jpg'
+                  image='https://lh3.google.com/u/0/d/1WbVXrGwe3QcFO0da2BPNCaEWILxWtXaF=w2000-h1576-iv1'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image='/images/8.jpg'
+                  image='https://lh3.google.com/u/0/d/1WbVXrGwe3QcFO0da2BPNCaEWILxWtXaF=w2000-h1576-iv1'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image='/images/8.jpg'
+                  image='https://lh3.google.com/u/0/d/1WbVXrGwe3QcFO0da2BPNCaEWILxWtXaF=w2000-h1576-iv1'
                 />
               </Col>
               <Col lg={4} className='my-2'>
                 <CardComponent
                   date='Sab, 22 JUL - 21:30'
                   cardBody='Descrição do evento xpto'
-                  image='/images/8.jpg'
+                  image='https://lh3.google.com/u/0/d/1WbVXrGwe3QcFO0da2BPNCaEWILxWtXaF=w2000-h1576-iv1'
                 />
               </Col>
 
