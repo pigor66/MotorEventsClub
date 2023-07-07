@@ -7,11 +7,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { CardComponent } from './components/card/card';
 
 
-
-
-
-
-
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
