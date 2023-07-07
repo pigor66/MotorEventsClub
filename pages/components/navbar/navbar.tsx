@@ -4,13 +4,23 @@ import { Button, Container, Form, Nav, NavDropdown, Navbar, Offcanvas } from 're
 import { MdKeyboardArrowDown, MdOutlineLocationOn } from 'react-icons/md';
 import ModalComponent from '../modal/modal';
 import Image from 'react-bootstrap/Image';
-import { useSession } from 'next-auth/react';
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useRouter } from 'next/router';
 
 
 export default function Menu(...props: any) {
   const [show, setShow] = useState(false);
   const { data: session } = useSession()
+  const router = useRouter();
 
+  if (!session) {
+    router.push('/login')
+
+  }
+
+  function logOut() {
+    signOut()
+  }
   const handleShow = () => setShow(true);
 
   return (
@@ -21,6 +31,8 @@ export default function Menu(...props: any) {
           Moto events club
         </Navbar.Brand>
         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand`} />
+        <Image src={session?.user?.image} alt='user picture' roundedCircle style={{ width: '3rem' }} />
+        <div onClick={() => logOut()} className=' ms-4' style={{ cursor: 'pointer' }} >Sair</div>
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand`}
           aria-labelledby={`offcanvasNavbarLabel-expand`}
@@ -41,7 +53,6 @@ export default function Menu(...props: any) {
                   <MdKeyboardArrowDown style={{ fontSize: '1.5rem' }} className='ms-lg-5 ' />
                 </Nav.Link>
               </div>
-              <Image src={session?.user?.image} alt='user picture' roundedCircle style={{ width: '3rem' }} />
               <Nav.Link href="#action1" className="text-center mx-3 my-1 w-lg-25">Faça seu evento</Nav.Link>
               <Nav.Link href="/login" className="text-center mx-3 my-1 w-lg-25">Acesse sua conta</Nav.Link>
               <div className='mx-lg-3 my-1 '>
