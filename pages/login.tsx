@@ -47,7 +47,7 @@ export default function Login() {
           <>
             <Container className="d-flex align-items-center justify-content-center vh-100 flex-column">
               <p>{count === 0 ? 'Redirecionando para a home' : (`aguarde ${count} segundos`)}</p>
-              <Image src={session?.user?.image} alt='user picture' roundedCircle />
+              <Image src={session?.user?.image || ''} alt='user picture' roundedCircle />
               <h3 className='text-center mb-5'>Bem vindo {session.user?.name}</h3>
               <Button onClick={() => signOut()}>Sair</Button>
             </Container>
